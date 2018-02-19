@@ -1,0 +1,8 @@
+TWRP_for_Samsung_Galaxy_A310FD
+
+
+To remove the red text when loading "RECOVERY IS NOT SEANDROID ENFORCING" it is necessary
+file "signature.txt" move to the directory /out/target/product/a3xeltexx, start from the terminal folder
+and execute the command
+cat signature.txt >> recovery.img
+After that, flash recovery.img

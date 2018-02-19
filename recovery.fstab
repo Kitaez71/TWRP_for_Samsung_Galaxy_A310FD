@@ -1,0 +1,18 @@
+/boot				emmc		/dev/block/mmcblk0p10
+/cache				ext4		/dev/block/mmcblk0p21
+/data				ext4		/dev/block/mmcblk0p23 length=-16384										encryptable=footer
+/recovery			emmc		/dev/block/mmcblk0p11
+/system				ext4		/dev/block/mmcblk0p20
+/efs				emmc		/dev/block/mmcblk0p3													flags=display="EFS";backup=1
+/radio				emmc		/dev/block/mmcblk0p14													flags=display="Modem";backup=1
+/cpefs				emmc		/dev/block/mmcblk0p4													flags=display="CPEFS";backup=1
+/persdata			emmc		/dev/block/mmcblk0p18													flags=display="PERSDATA";backup=1
+
+
+/system_image		emmc		/dev/block/mmcblk0p20
+/cache_image		emmc		/dev/block/mmcblk0p21
+/radio_image		emmc		/dev/block/mmcblk0p14
+/hidden_image		emmc		/dev/block/mmcblk0p22
+
+/external_sd		auto		/dev/block/mmcblk1p1  /dev/block/mmcblk1								flags=display="MicroSDcard";storage;wipeingui;removable
+/usb-otg			auto		/dev/block/sda1  /dev/block/sda											flags=display="USB-OTG";storage;wipeingui;removable
